@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****共通部分
+***********************************************/
+body {
+  font-family: "tt_norms_probold", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #efe8dd;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.music-video-top {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.music-video-top img {
+  margin-left: 30%;
+  width: 20%;
+}
+
+.music-video {
+  width: 15%;
+  height: auto;
+  margin-left: 2%;
+  background-color: #000;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 900;
+}
+
+/* channel-icon */
+.channel-icon {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.channel-icon a img {
+  width: 10%;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.channel-icon a img:hover {
+  transform: scale(1.05);
+}
+
+/* MVs */
+.MVs {
+  width: 1464px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.small-case {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+}
+
+.link-case {
+  margin: 1%;
+  display:flex;
+  flex-direction: column;
+}
+
+.link-case a img {
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+.link-case a img:hover {
+  transform: scale(1.05);
+}
+/*****フッター*****/
+.footer-top {
+  display: table;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.footer-top .copyright {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+.footer-top .copyright img {
+  width: 100px;
+  height: auto;
+  padding: 20px;
+}
+
+
+

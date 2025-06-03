@@ -1,0 +1,270 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****共通部分
+***********************************************/
+body {
+  font-family: "tt_norms_probold", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  background-color: #efe8dd;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* ローディング画面 */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: rgb(16, 16, 16);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.spinner {
+  width: auto;
+  height: auto;
+  margin-top: 300px;
+  margin-left: 800px;
+}
+/* ローディングアニメーション */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+ 
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* video-area */
+.video-area {
+  position:relative;
+  display: flex;
+}
+
+#video {
+  width: 100%;
+  position: relative;
+  margin: auto;  
+}
+
+.main-logo {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  margin-top: 400px;
+  margin-left: 25%;
+}
+/* リンク */
+.snslink {
+  margin-top: 45%;
+  margin-left: 2%;
+  position:absolute;
+  width: auto;
+}
+.snslink-img {
+  width: 3%;
+  margin-right: 3%;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.snslink a img:hover {
+  opacity: 1.0;
+}
+
+/*NEWS*/
+.news {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 30px;
+}
+
+.btn-link span {
+  display: block;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 22px;
+  padding: 0 0.5rem;
+  font-size: 12px;
+  width: auto;
+  height: 22px;
+  transition: 0.3s;
+}
+
+.btn-link :hover {
+  background-color: rgb(200, 0, 200);
+}
+
+.ztmy-under-inner {
+  margin: auto;
+  padding: 0px;
+}
+
+.align-center {
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.f-tt--b {
+  font-family: "tt_norms_probold", "游ゴシック体", "Yu Gothic", YuGothic;
+  font-style: normal;
+  font-weight: 700;
+}
+
+a, button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*****フッター*****/
+.footer-top {
+  display: table;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.footer-top .copyright {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+.footer-top .copyright img {
+  width: 100px;
+  height: auto;
+  padding: 20px;
+}
+
+/*****メインコンテンツ・トップページ
+***********************************************/
+.article-top {
+  margin: 30px auto 0;
+  width: 1040px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-top {
+  align-self: flex-start;
+  width: 48.5%;
+  margin-bottom: 30px;
+  padding: 2.5%;
+  background-color: black;
+}
+.section-top img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.section-top iframe {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.section-top h1 {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  line-height: 1.4;
+  border-bottom: 1px solid #bababa;
+  margin-bottom: 20px;
+}
+.section-top p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.75;
+}
+.section-top .btn {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e50112;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.section-top .btn:hover {
+  background-color: #e50112;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+/*****メインコンテンツ・ディスコグラフィー
+***********************************************/
+.article-discography {
+  margin: 30px auto 0;
+}
+.section-discography {
+  width: 1040px;
+  padding: 2.5%;
+  margin: 0 auto 30px auto;
+  background-color: black;
+}
+.section-discography img {
+  max-width: 90%;
+  margin-bottom: 10px;
+}
+.section-discography h1 {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+.section-discography h2 {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  border-bottom: 1px solid #bababa;
+  margin-bottom: 20px;
+}
+.section-discography p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+.section-discography ul {
+  list-style: none;
+}
+.section-discography ul li {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.item-discography {
+  display: flex;
+  justify-content: space-around;
+}
+.item-left {
+  width: 50%;
+}
+.item-right {
+  width: 50%;
+}
+
+
+
